@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mwinga Personal portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/77af5ca8a4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hello, I'm <span>Lewis</span><br> Mwinga From Kenya</h1>
+        </div>
+    </div>  
+</div>
+<!-- --------------about------- --->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hi, I’m Lewis Mwinga, a passionate web developer from Kenya with a Diploma in Information and Communication Technology (ICT). I love bringing ideas to life through clean, functional, and user-friendly websites. My journey in tech has equipped me with skills in a variety of programming languages, including C, C++, Visual Basic, HTML, CSS, JavaScript, and PHP.  Web development is where my heart lies, and I’m always exploring new ways to create seamless digital experiences. Whether it’s crafting responsive designs or building dynamic web applications, I’m driven by a curiosity for technology and a commitment to creating solutions that make an impact. When I’m not coding, you might find me vibing to some classic tunes or diving into new tech trends.  Let’s connect and create something amazing together!
+</p>
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+    <p class="tab-links" onclick="opentab('Education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>UI/UX</span><br>Designing Web/App</li>
+        <li><span>Web development</span><br>Designing responsive websites</li>
+        <li><span>Networking</span><br>Fixing ethernet cables</li>
+    </ul>
+</div>
+<div class="tab-contents" id="Experience">
+    <ul>
+        <li><span>2024</span><br>Attachment ICT Department at Kenya Ports Authority</li>
+    </ul>
+</div>
+<div class="tab-contents" id="Education">
+    <ul>
+        <li><span>2022 - 2024</span><br>NIBS Technical College</li>
+        <li><span>2021</span><br>Zetech University</li>
+        <li><span>2020</span><br>St Mathias Mulumba computer school</li>
+    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------service-------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae iste ea, quam necessitatibus eum mollitia. Maxime dolor cumque voluptates quis sed recusandae magnam deleniti nobis dolore doloremque, quod sequi.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae iste ea, quam necessitatibus eum mollitia. Maxime dolor cumque voluptates quis sed recusandae magnam deleniti nobis dolore doloremque, quod sequi.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae iste ea, quam necessitatibus eum mollitia. Maxime dolor cumque voluptates quis sed recusandae magnam deleniti nobis dolore doloremque, quod sequi.</p>
+                <a href="#">Learn more</a>
+            </div>
+   </div>
+   <!-----------portfolio---------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/appdev.jpeg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to people around the globe</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/networking.png">
+                <div class="layer">
+                    <h3>Database</h3>
+                    <p>Able to execute Front-end requests</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/coding.jpeg">
+                <div class="layer">
+                    <h3>Programming</h3>
+                    <p>Using IDE such as VS Code to program responsive websites</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+<!--------------------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> +254 768747566</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Lewis. Made with <i class="fa-solid fa-heart"></i> by Mwinger-nova</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyVYVHkHf431S3-AnxrkQpAnF1PHbTpCIR233pjIVa6Si20Z-hgXLQEHcE7Hsm32Hze/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    </body>
+</html>
